@@ -1,0 +1,49 @@
+body {
+  background-color: #362350;
+  color: #e0e0e0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.carrosselContainer {
+  background-color: rgba(0, 0, 0, 0);
+}
+.homepage-nav {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.card,
+.card-img-top {
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: end;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}

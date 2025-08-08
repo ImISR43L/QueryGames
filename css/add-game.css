@@ -1,0 +1,86 @@
+body {
+  background-color: #1d101f;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.form-container {
+  background: rgb(29, 16, 31);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(28, 15, 36, 0.2);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 3rem auto;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  color: white;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #0f0f0f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  background-color: #2c2c2c;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6200ff;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6200ff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4200ac;
+}
+
+.form-check-label {
+  display: inline;
+  margin-left: 0.5rem;
+  font-weight: normal;
+}
+
+.form-check-input {
+  width: auto;
+}

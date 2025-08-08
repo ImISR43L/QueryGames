@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/account.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">MOGO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">SUA LOJA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../categorys.html">CATEGORIAS</a>
+            </li>
+          </ul>
+
+          <form class="d-flex mx-auto" role="search" style="width: 300px">
+            <div class="input-group">
+              <span
+                class="input-group-text bg-secondary border-secondary text-white"
+                ><i class="bi bi-search"></i
+              ></span>
+              <input
+                class="form-control bg-secondary border-secondary text-white"
+                type="search"
+                placeholder="Pesquisar"
+              />
+            </div>
+          </form>
+
+          <div class="navbar-nav ms-auto d-flex flex-row align-items-center">
+            <div id="menu-visitante">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-primary text-white px-3 ms-2"
+                    href="/user/login.html"
+                    >LOGIN</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-primary text-white px-3 ms-2"
+                    href="/user/register.html"
+                    >REGISTRAR</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div id="menu-logado" style="display: none">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="user-nickname"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-circle me-1"></i>
+                    Carregando...
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        id="nav-minha-conta"
+                        href="/user/account.html"
+                        >Minha Conta</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="btn-logout"
+                        >Sair (Logout)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="parent-flex">
+      <div class="child">
+        <div class="profile-header">
+          <div class="profile-container">
+            <img
+              id="profileImage"
+              src="/imgs/blank_profile.jpg"
+              alt="User Profile Picture"
+            />
+            <input type="file" id="fileInput" accept="image/*" />
+          </div>
+          <button
+            id="editProfileBtn"
+            class="btn btn-secondary"
+            style="display: none"
+          >
+            Edit Profile
+          </button>
+          <button
+            id="saveChangesBtn"
+            class="btn btn-primary"
+            style="display: none"
+          >
+            Save Changes
+          </button>
+        </div>
+        <div class="profile-info">
+          <div class="profile_content">
+            <div class="profile_leftcol">
+              <div id="description-container">
+                <h4>About Me</h4>
+                <div id="descriptionDisplay" class="description-text"></div>
+                <textarea
+                  id="descriptionEditor"
+                  class="description-textarea"
+                  placeholder="Tell us about yourself..."
+                  style="display: none"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="parent-flex">
+        <div class="footer-child">
+          <div class="logo">
+            <img
+              id="footer-logo"
+              src="../imgs/bolsonaro.png"
+              alt="paralelelipedo"
+            />
+          </div>
+          <div class="footer-info">
+            © 2025, QGames, Inc. Todos os direitos reservados. Nossos sites
+            podem conter links para outros sites e recursos fornecidos por
+            terceiros. Esses links são fornecidos apenas para a sua
+            conveniência. A QGames não tem controle sobre o conteúdo desses
+            sites ou recursos e não aceita nenhuma responsabilidade por eles ou
+            por qualquer perda ou dano que possa resultar de seu uso.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script src="../javascript/auth.js"></script>
+    <script src="../javascript/account.js"></script>
+  </body>
+</html>

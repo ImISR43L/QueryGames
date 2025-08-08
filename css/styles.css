@@ -1,0 +1,107 @@
+body {
+  background-image: url("/imgs/coisafeia.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.form-container {
+  background: rgb(29, 16, 31);
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(28, 15, 36, 0.2);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.input-group {
+  margin-bottom: 1.25rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+input {
+  color: white;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #0f0f0f;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  background-color: #2c2c2c;
+}
+input:focus {
+  outline: none;
+  border-color: #6200ff;
+}
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6200ff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #4200ac;
+}
+.mensagem {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: none;
+}
+.sucesso {
+  color: #155724;
+  background-color: #d4edda;
+  display: block;
+}
+.erro {
+  color: #721c24;
+  background-color: #f8d7da;
+  display: block;
+}
+.redirect-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #acacac;
+}
+.redirect-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.redirect-link a:hover {
+  text-decoration: underline;
+}
+
+.disabled-link {
+  pointer-events: none;
+  opacity: 0.6;
+}

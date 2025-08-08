@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QGames</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/add-game.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">QGames</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">SUA LOJA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="categorys.html">CATEGORIAS</a>
+            </li>
+          </ul>
+          <form class="d-flex mx-auto" role="search" style="width: 300px">
+            <div class="input-group">
+              <span
+                class="input-group-text bg-secondary border-secondary text-white"
+                ><i class="bi bi-search"></i
+              ></span>
+              <input
+                class="form-control bg-secondary border-secondary text-white"
+                type="search"
+                placeholder="Pesquisar"
+              />
+            </div>
+          </form>
+          <div class="navbar-nav ms-auto d-flex flex-row align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="cart-icon">
+                <i class="bi bi-cart-fill"></i>
+                <span
+                  class="badge rounded-pill bg-danger"
+                  id="cart-count"
+                  style="display: none"
+                  >0</span
+                >
+              </a>
+            </li>
+            <div id="menu-visitante">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-primary text-white px-3 ms-2"
+                    href="/user/login.html"
+                    >LOGIN</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link btn btn-primary text-white px-3 ms-2"
+                    href="/user/register.html"
+                    >REGISTRAR</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="menu-logado" style="display: none">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="user-nickname"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-person-circle me-1"></i>
+                    Carregando...
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        id="nav-minha-conta"
+                        href="/user/account.html"
+                        >Minha Conta</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="btn-logout"
+                        >Sair (Logout)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container carroselContainer">
+      <h1>Destaques</h1>
+      <div id="game-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-container"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#game-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#game-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h1>Novidades</h1>
+      <div class="row justify-content-center" id="games-grid-container"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="javascript/auth.js"></script>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>

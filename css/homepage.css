@@ -1,0 +1,125 @@
+body {
+  background-color: #362350;
+  color: #e0e0e0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.carrosselContainer {
+  background-color: rgba(0, 0, 0, 0);
+}
+.homepage-nav {
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.card,
+.card-img-top {
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 10px;
+  text-align: end;
+  border-radius: 0;
+}
+
+.games-cards {
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.carrosselManeiro .slick-slide {
+  padding: 0 10px;
+}
+
+.carrosselManeiro .card {
+  height: 17.8rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.carrosselManeiro .card-img-custom {
+  height: 13.8rem;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+}
+
+.carrosselManeiro .card-body {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.carrosselManeiro .card-text {
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.carrosselContainer h1 {
+  font-size: 28px;
+  color: white;
+}
+
+.game-grid-card {
+  width: 18rem; 
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 20px; 
+}
+
+.game-grid-card .card-img-top {
+  height: 13.8rem;
+  object-fit: cover; 
+}
+
+.game-grid-card .card-body {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-grid-card .card-text {
+  color: black;
+  font-weight: bold;
+}
+#game-carousel .card-img-custom {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-size: 100% 100%;
+}

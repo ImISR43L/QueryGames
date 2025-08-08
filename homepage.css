@@ -1,0 +1,63 @@
+body {
+  background-color: #362350;
+  color: #e0e0e0;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.carrosselContainer {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carrosselManeiro .slick-slide {
+  height: 17.8rem !important;
+  display: flex !important;
+  align-items: stretch !important;
+  padding: 0 10px;
+}
+
+.carrosselManeiro .card {
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.carrosselManeiro .card-img-top {
+  /* Forçando a altura com !important para garantir */
+  height: 13.8rem !important;
+  object-fit: fill;
+}
+
+.carrosselManeiro .card-body {
+  /* Forçando a altura com !important para garantir */
+  height: 4rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.carrosselManeiro .card-text {
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+#game-carousel .card-img-custom {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* --- Opção 1 (Recomendada): Preenche o espaço sem distorcer a imagem. --- */
+  /* Isso fará com que a imagem cubra toda a área, cortando o excesso se necessário. */
+  background-size: cover;
+
+  /* --- Opção 2 (Exatamente o que você pediu, "esticada"): Preenche o espaço, mas pode distorcer. --- */
+  /* Se preferir esta, comente a linha de cima (com /*) e descomente a de baixo. */
+  /* background-size: 100% 100%; */
+}
